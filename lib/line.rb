@@ -35,7 +35,6 @@ class Line
   def self.inherited(klass)
     @subclasses << klass
     @subclasses.sort_by(&:numeric_priority)
-    puts "#{@subclasses.size} scs, sorted are #{@subclasses.inspect}"
   end
 
   # Run a line, work out best child, initialise it with line
